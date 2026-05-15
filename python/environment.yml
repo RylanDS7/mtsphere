@@ -1,0 +1,16 @@
+name: mtsphere
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - jupyterlab
+  - trimesh
+  - vtk
+  - pyvista
+  - meshio
+  - pip
