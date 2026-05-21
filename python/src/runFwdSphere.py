@@ -33,17 +33,17 @@ sphres = 0.1   # conductive anomaly
 # nf = 71
 # freq = np.logspace(-3, 4, nf)   # 0.001 → 10000 Hz
 nf = 1
-freq = np.logspace(0,0,nf)
+freq = np.logspace(-3,-3,nf)
 
 # =========================================================
-# 4. RECEIVER LOCATIONS (YOUR LIST)
+# 4. RECEIVER LOCATIONS
 # =========================================================
 x_list = np.array([
 -5000,-2000,-1500,-1000,-750,-500,-400,-300,-250,-200,-150,-125,-100,-90,-80,-70,-60,-50,-40,-30,-20,-10,
 0,10,20,30,40,50,60,70,80,90,100,125,150,200,250,300,400,500,750,1000,1500,2000,5000
 ])
 
-y_list = np.array([0])  # same list
+y_list = np.array([0])
 
 nx = len(x_list)
 ny = len(y_list)
@@ -109,6 +109,6 @@ print("Simulation complete")
 print("Apparent resistivity shape:", appres.shape)
 print("Phase shape:", phase.shape)
 
-np.save('imp1.npy', imp)
-np.save('appres1.npy', appres)
-np.save('phase1.npy', phase)
+np.save('dataOut/imp0.npy', imp)
+np.save('dataOut/appres0.npy', appres)
+np.save('dataOut/phase0.npy', phase)
